@@ -4,9 +4,13 @@ WORKDIR /usr/src/app
 COPY . .
 
 CMD ["python", "./table.py"]
-#CMD ["python", "./table.py", "3", "5"]
-#CMD ["python", "./table.py", "2", "5", "10"]
+#CMD ["python", "./table_volume.py", "3", "5"]
+#CMD ["python", "./table_volume.py", "2", "5", "10"]
 
-#ENTRYPOINT ["python", "./table.py"]
+#ENTRYPOINT ["python", "./table_volume.py"]
 #CMD ["4", "8"]
 #CMD ["5", "7"]
+
+# Build : docker build -t cmd-ep .
+# Run   : docker run -it cmd-ep
+# Run   : docker run -it cmd-ep 4 7
