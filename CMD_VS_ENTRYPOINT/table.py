@@ -5,6 +5,8 @@ from time import sleep
 def print_table(num_list):
     if not num_list:
         print("No Arguments Supplied...!!!")
+        return
+
     for num in num_list:
         num = int(num)
         print("Table for {}...".format(num))

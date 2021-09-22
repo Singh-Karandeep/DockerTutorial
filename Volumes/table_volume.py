@@ -19,6 +19,7 @@ def write_to_file(row, file_obj):
 def print_table(num_list):
     if not num_list:
         print("No Arguments Supplied...!!!")
+        return
 
     file_obj = make_directories()
 
