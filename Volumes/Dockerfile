@@ -9,4 +9,5 @@ ENTRYPOINT ["python", "./table_volume.py"]
 # Paste above in Windows File Explorer
 
 # Build : docker build -t table-volume .
+# Run   : docker run -it table-volume 5 10
 # Run   : docker run -it -v table-vol:/usr/src/app/Artifacts table-volume 5 10
