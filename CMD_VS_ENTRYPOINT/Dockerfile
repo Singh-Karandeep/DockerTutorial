@@ -18,3 +18,4 @@ CMD ["python", "./table.py"]
 # Run   : docker run -it cmd-ep ls
 
 # Que : How to achieve the same in CMD ?
+# Ans : $ docker run -it cmd-ep python ./table.py 2 5

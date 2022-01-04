@@ -1,6 +1,6 @@
+import os
 import sys
 from time import sleep, strftime
-import os
 
 
 def make_directories():
@@ -33,7 +33,7 @@ def print_table(num_list):
         write_to_file('\n', file_obj)
 
     file_obj.close()
-    sleep(200)
+    sleep(1000)
 
 
 if __name__ == '__main__':

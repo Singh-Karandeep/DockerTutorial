@@ -9,5 +9,8 @@ ENTRYPOINT ["python", "./table_volume.py"]
 # Paste above in Windows File Explorer
 
 # Build : docker build -t table-volume .
-# Run   : docker run -it table-volume 5 10
-# Run   : docker run -it -v table-vol:/usr/src/app/Artifacts table-volume 5 10
+# Run (Without Volume)  : docker run -it table-volume 5 10
+# Run (With Volume) : docker run -it -v my-table-vol:/usr/src/app/Artifacts table-volume 5 10
+
+# View Container : $ docker ps -a
+# To Gain Shell Access : $ docker exec -it <container_id> bash
